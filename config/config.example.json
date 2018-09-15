@@ -1,0 +1,6 @@
+{
+	"port": 80,
+	"webhookSecret": "AbcDeFGHiJKLMn12345",
+	"githubAppID": "1",
+	"urlScanAPIKey": "abcdefgh-01234-5678-ijkl-mnopqrstuvwx"
+}
