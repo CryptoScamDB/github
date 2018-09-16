@@ -25,7 +25,7 @@ webhook.on('pull_request', async event => {
 			ref: event.payload.pull_request.head.ref,
 			path: '_data/scams.yaml'
 		});
-		/*const originalContent = yaml.safeLoad(Buffer.from(originalBranch.data.content,'base64').toString());
+		const originalContent = yaml.safeLoad(Buffer.from(originalBranch.data.content,'base64').toString());
 		const pullRequestContent = yaml.safeLoad(Buffer.from(pullRequestBranch.data.content,'base64').toString());
 		const oldEntries = originalContent.map(entry => entry.url);
 		const newEntries = await Promise.all(pullRequestContent.map(entry => entry.url).filter(entry => !oldEntries.includes(entry)).map(url => pullRequestContent.find(entry => entry.url === url)).map(async entry => {
@@ -49,7 +49,7 @@ webhook.on('pull_request', async event => {
 				body: '**No new entries added**'
 			});
 		}
-		debug("Done!");*/
+		debug("Done!");
 	}
 });
 
