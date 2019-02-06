@@ -3,8 +3,18 @@ const createGitHubApp = require('github-app');
 const config = require('./config');
 const privateKey = require('./privatekey');
 
-debug("Registering Github app...");
-module.exports = createGitHubApp({
-	id: config.githubAppID,
-	cert: privateKey
-});
+
+const createGHApp = () => {
+  try {
+    debug("Registering Github app...");
+    return (createGitHubApp({
+      id: config.githubAppID,
+      cert: privateKey
+    }));
+    debug("Finished registering Github app.");
+  } catch (err) {
+    debug(err);
+  }
+}
+
+module.exports = createGHApp();
