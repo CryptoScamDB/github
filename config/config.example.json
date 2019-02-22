@@ -2,5 +2,9 @@
 	"port": 80,
 	"webhookSecret": "AbcDeFGHiJKLMn12345",
 	"githubAppID": "1",
-	"urlScanAPIKey": "abcdefgh-01234-5678-ijkl-mnopqrstuvwx"
+	"urlScanAPIKey": "abcdefgh-01234-5678-ijkl-mnopqrstuvwx",
+  "githubAccessKey": "0000a000000a0000000a0000000a000000000",
+  "makeComment": true,
+  "autoCommit": true,
+  "deleteCommands": true
 }
